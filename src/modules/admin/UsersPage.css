@@ -1,0 +1,180 @@
+.users-page {
+  background: #f6f8fa;
+  padding: 2rem 0;
+}
+
+.users-title {
+  color: #1a237e;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.users-stats-cards {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.users-card {
+  background: #fff;
+  color: #1a237e;
+  border-radius: 10px;
+  padding: 1rem 1.7rem;
+  font-size: 1.08rem;
+  font-weight: bold;
+  box-shadow: 0 1px 8px rgba(30,36,90,0.07);
+  min-width: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.users-card-icon {
+  font-size: 1.3rem;
+}
+
+.users-add-btn {
+  background: #3949ab;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.7rem 1.4rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.users-add-btn:hover {
+  background: #1a237e;
+}
+
+.users-table-container {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(30,36,90,0.07);
+  padding: 1.5rem;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+.users-table th,
+.users-table td {
+  padding: 1rem;
+  text-align: left;
+}
+.users-table th {
+  background: #3949ab;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.05rem;
+  border-bottom: 2px solid #283593;
+}
+.users-table tr:nth-child(even) {
+  background: #f5f7fa;
+}
+.users-table tr:hover {
+  background: #e8eaf6;
+  transition: background 0.18s;
+}
+.badge {
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  font-size: 0.98rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.badge.active {
+  background: #43a047;
+  color: #fff;
+}
+.badge.inactive {
+  background: #d32f2f;
+  color: #fff;
+}
+.btn-icon {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  color: #3949ab;
+  transition: color 0.18s;
+}
+.btn-icon:hover {
+  color: #1a237e;
+}
+.btn-icon:last-child {
+  color: #d32f2f;
+}
+.btn-icon:last-child:hover {
+  color: #b71c1c;
+}
+
+/* Modal styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30,36,90,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(30,36,90,0.15);
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+}
+.modal h3 {
+  color: #1a237e;
+  margin-bottom: 1.2rem;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.btn-modal-ok {
+  background: #3949ab;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-modal-cancel {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-modal-ok:hover { background: #1a237e; }
+.btn-modal-cancel:hover { background: #b71c1c; }
+
+@media (max-width: 900px) {
+  .users-table th, .users-table td { padding: 0.5rem; font-size: 0.95rem; }
+  .users-stats-cards { flex-direction: column; gap: 0.7rem; }
+  .modal { min-width: 90vw; }
+}

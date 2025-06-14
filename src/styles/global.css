@@ -1,0 +1,20 @@
+/* src/styles/global.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}
+h1, h2 {
+  color: #1a237e;
+}
+.dashboard-container {
+  padding: 2rem;
+}
+.widget {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
